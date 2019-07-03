@@ -1,1 +1,85 @@
-https://github.com/mdFaisalAnwar/ctpro1git.git
+composer installation-
+composer global require "laravel/installer"
+
+check composer is working or not-
+composer dump-autoload
+
+composer require installation for pdf --
+composer require mpdf/mpdf
+
+
+
+//////////////////////Git/////////////
+(copy from clone or download) https://github.com/mdFaisalAnwar/ctpro1git.git
+
+(git initilization)
+
+git init
+
+git remote add origin https://github.com/mdFaisalAnwar/ctpro1git.git
+
+git remote -v
+
+git status
+
+
+git config --global user.email "mdfaisalanwar@gmail.com"
+
+
+git add .
+
+git commit -m "Working for form validation"
+
+git push origin master
+
+asking = user and password
+
+git push origin master --force
+
+/////////////////////////////////
+
+remove a file- 
+git rm hello.txt
+
+view all file-
+ls
+
+after complete a action-
+git commit -m "deleted"
+
+data restoration in git-
+git push origin master
+
+
+///////////////////////////////////
+
+For installation Larevel--
+composer create-project --prefer-dist laravel/laravel blog
+
+show the directory--
+dir
+
+insert into directory--
+cd ctpro1lara
+
+laravel installation version status--
+php artisan serve
+
+
+//////////////////////
+
+Extend time of phpstrom--
+
+REM Delete eval folder with licence key and options.xml which contains a reference to it
+for %%I in ("WebStorm", "IntelliJ", "CLion", "Rider", "GoLand") do (
+    for /d %%a in ("%USERPROFILE%\.%%I*") do (
+        rd /s /q "%%a/config/eval"
+        del /q "%%a\config\options\other.xml"
+    )
+)
+
+REM Delete registry key and jetbrains folder (not sure if needet but however)
+rmdir /s /q "%APPDATA%\JetBrains"
+reg delete "HKEY_CURRENT_USER\Software\JavaSoft" /f
+
+////////////////////////////
