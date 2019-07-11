@@ -1,0 +1,7 @@
+
+php artisan make:controller pagesController
+
+php artisan make:controller StudentController -r
+
+product table migration and controller create-
+php artisan make:model Product -mc

@@ -68,6 +68,10 @@ php artisan serve
 
 //////////////////////
 
+product-info.json--
+
+"version": "2019.1.3",
+
 Extend time of phpstrom--
 
 REM Delete eval folder with licence key and options.xml which contains a reference to it
@@ -82,4 +86,23 @@ REM Delete registry key and jetbrains folder (not sure if needet but however)
 rmdir /s /q "%APPDATA%\JetBrains"
 reg delete "HKEY_CURRENT_USER\Software\JavaSoft" /f
 
+///////////////////////////
+Resetting evaluation period
+
+The easiest way to reset evaluation period manually is to delete PhpStorm's config folder usually located at `{user.home}/.PhpStorm{version}/config`. Additionally you need to remove PhpStorm's Java user preferences:
+
+     c:\Users\John\.PhpStorm2016.1\
+
+ * For Windows: registry key `HKEY_CURRENT_USER\SOFTWARE\JavaSoft\Prefs\jetbrains\phpstorm`
+ * For Others: directory `~/.java/.userPrefs/jetbrains/phpstorm`
+
+Now if you will start PhpStorm, it will think that it was just installed and started first time and will offer you to select evaluation 30 days period.
+
+
 ////////////////////////////
+
+shofiullah
+Islam
+shofiullahislamdhk@gmail.com
+Dhaka International University
+https://diu.ac/
